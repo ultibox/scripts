@@ -1,0 +1,15 @@
+# yenc
+
+cd ~
+mkdir yenc
+cd yenc
+wget http://heanet.dl.sourceforge.net/project/yydecode/yydecode/0.2.10/yydecode-0.2.10.tar.gz
+tar xzf yydecode-0.2.10.tar.gz
+cd yydecode-0.2.10
+./configure
+make
+sudo make install
+cd ../..
+rm -rf ~/yenc
+wget https://github.com/niel/php-yenc/releases/download/v1.3.0/php7.0-yenc_1.3.0_amd64.deb
+sudo dpkg -i php7.0-yenc_1.3.0_amd64.deb
